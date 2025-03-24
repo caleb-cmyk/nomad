@@ -1,0 +1,21 @@
+meta {
+  name: FIND MANY PROPERTIES BY LOCATION
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{HOST}}/properties/search/?propertyLocation=Singapore
+  body: none
+  auth: inherit
+}
+
+params:query {
+  propertyLocation: Singapore
+}
+
+body:json {
+  {
+    "countryOfProperty": "Australia"
+  }
+}

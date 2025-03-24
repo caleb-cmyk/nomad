@@ -1,0 +1,23 @@
+meta {
+  name: NEW PROPERTY
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{HOST}}/properties/new
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "hostId": "<INHERITED FROM LOGGED IN USER>",
+    "propertyName": "Townhouse",
+    "countryOfProperty": "Australia",
+    "postcode": 2200,
+    "addressLine": "Newtown, Australia",
+    "validated": true,
+    "listed": false
+  }
+}

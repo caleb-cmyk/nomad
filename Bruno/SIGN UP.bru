@@ -1,0 +1,26 @@
+meta {
+  name: SIGN UP
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{HOST}}/auth/sign-up
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "email": "bob@yahoo.com",
+    "password": "123",
+    "firstName": "Bob",
+    "lastName": "Saget",
+    "countryOfResidence": "United States",
+    "dateOfBirth": "1990-02-14",
+    "phoneCountry": 1,
+    "phoneNumber": 123456789,
+    "gender": "Male"
+  }
+  
+}

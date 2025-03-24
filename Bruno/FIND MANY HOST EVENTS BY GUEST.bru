@@ -1,0 +1,25 @@
+meta {
+  name: FIND MANY HOST EVENTS BY GUEST
+  type: http
+  seq: 11
+}
+
+get {
+  url: {{HOST}}/hostEvents/guest/:guestId/?status=pending
+  body: none
+  auth: inherit
+}
+
+params:query {
+  status: pending
+}
+
+params:path {
+  guestId: 67cabb76e8a4daab976501b5
+}
+
+body:json {
+  {
+    "status": "pending"
+  }
+}

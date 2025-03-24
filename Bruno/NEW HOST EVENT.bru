@@ -1,0 +1,21 @@
+meta {
+  name: NEW HOST EVENT
+  type: http
+  seq: 10
+}
+
+post {
+  url: {{HOST}}/hostEvents/new
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "hostId": "67cabac9e8a4daab976501ac",
+    "guestId": "INHERITED FROM LOGGED IN USER",
+    "propertyId": "67cabd005923403304b701c4",
+    "dateStart": "2025-03-13",
+    "dateEnd": "2025-03-14"
+  }
+}

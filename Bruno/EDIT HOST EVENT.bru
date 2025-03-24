@@ -1,0 +1,21 @@
+meta {
+  name: EDIT HOST EVENT
+  type: http
+  seq: 12
+}
+
+put {
+  url: {{HOST}}/hostEvents/:hostEventId/edit
+  body: json
+  auth: inherit
+}
+
+params:path {
+  hostEventId: 67cade5ffa1118056d567699
+}
+
+body:json {
+  {
+    "status": "pending"
+  }
+}

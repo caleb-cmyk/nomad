@@ -1,0 +1,25 @@
+meta {
+  name: FIND MANY HOST EVENTS BY PROPERTY
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{HOST}}/hostEvents/property/:propertyId/?status=pending
+  body: none
+  auth: inherit
+}
+
+params:query {
+  status: pending
+}
+
+params:path {
+  propertyId: 67cabd655923403304b701c7
+}
+
+body:json {
+  {
+    "status": "pending"
+  }
+}
